@@ -1,0 +1,116 @@
+* {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-image: linear-gradient(to bottom,#4d84a7, #ecf2f8);
+    height          : 6em;
+    width           : auto;
+    text-align      : right;
+    padding-top     : 28px;
+    font-size       : 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color          : #000;
+    padding        : 7px;
+    margin         : 7px;
+    font-weight    : bold;
+    font-size      : 18px;
+}
+
+a:hover {
+    border: 2px solid #000;
+}
+
+span {
+    float      : left;
+    padding    : 2px;
+    margin-left: 10px;
+    text-shadow: 2px 3px 5px #fff;
+    font-size  : 25px;
+    font-family: cursive;
+    font-weight: bold;
+    color      : #000;
+}
+
+span::after {
+    content: "";
+    display: table;
+    clear  : both;
+}
+
+.dropdown-container {
+    text-align: center;
+    width     : 7em;
+    position  : relative;
+    display   : inline-block;
+}
+
+.dropdown-contant {
+    text-align      : center;
+    width           : 10em;
+    position        : absolute;
+    background-color: #4d84a7;
+    left            : 0;
+    top             : 30px;
+    display         : none;
+}
+
+.dropdown-container:hover .dropdown-contant {
+    display: block;
+}
+
+.dropdown-contant a {
+    padding: 7px;
+    display: block;
+}
+
+.heighlight {
+    background-color: #ecf2f8;
+    height          : auto;
+    padding         : 12px;
+}
+
+.otc-container {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    justify-content: center;
+}
+
+.otc-contant {
+    background-color: #fff;
+    border-radius   : 5%;
+    padding         : 12px;
+    margin          : 10px;
+    height          : 375px;
+    width           : 300px;
+    text-align      : left;
+}
+
+.otc-contant p,
+.otc-contant h2,
+.otc-img {
+    padding: 7px;
+}
+
+.otc-img {
+    width : 272px;
+    height: 160px;
+}
+
+footer {
+    background-color: #4d84a7;
+    font-weight     : bold;
+    height          : 7em;
+    width           : auto;
+    color           : #fff;
+    display         : flex;
+    text-align      : left;
+    justify-content : space-around;
+    align-items     : center;
+}

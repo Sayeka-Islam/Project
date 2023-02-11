@@ -1,0 +1,252 @@
+* {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-image: linear-gradient(to bottom, #4d84a7, #ecf2f8);
+    height          : 5em;
+    width           : auto;
+    text-align      : right;
+    padding-top     : 28px;
+    font-size       : 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color          : #000;
+    padding        : 7px;
+    margin         : 3px;
+    font-weight    : bold;
+    font-size      : 18px;
+}
+
+.nav a:hover {
+    border: 2px solid #000;
+}
+
+#logo {
+    float      : left;
+    padding    : 2px;
+    margin-left: 10px;
+    text-shadow: 2px 3px 5px #fff;
+    font-size  : 25px;
+    font-family: cursive;
+    font-weight: bold;
+    color      : #000;
+}
+
+#logo::after {
+    content: "";
+    display: table;
+    clear  : both;
+}
+
+.dropdown-container {
+    text-align: center;
+    width     : 7em;
+    position  : relative;
+    display   : inline-block;
+}
+
+.dropdown-contant {
+    text-align      : center;
+    width           : 10em;
+    position        : absolute;
+    background-color: #4d84a7;
+    left            : 0;
+    top             : 30px;
+    display         : none;
+}
+
+.dropdown-container:hover .dropdown-contant {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-contant a {
+    display: block;
+}
+
+footer {
+    background-color: #4d84a7;
+    font-weight     : bold;
+    height          : 7em;
+    width           : auto;
+    color           : #fff;
+    display         : flex;
+    text-align      : left;
+    justify-content : space-around;
+    align-items     : center;
+}
+
+form {
+    display: inline;
+}
+
+input[type=text] {
+    border : none;
+    height : 27px;
+    width  : 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+form button {
+    padding         : 6px;
+    border          : none;
+    cursor          : pointer;
+    background-image: linear-gradient(to bottom, #7EA6C0, #B0C8D9);
+    font-size       : 16px;
+}
+
+main {
+    background-color: #F3F7FB;
+}
+
+.one-container {
+    width          : 100%;
+    height         : auto;
+    padding        : 30px;
+    display        : flex;
+    justify-content: space-around;
+}
+
+.one-content {
+    width        : 300px;
+    height       : 300px;
+    margin       : 12px;
+    padding      : 12px;
+    text-align   : center;
+    border-radius: 7px;
+    box-shadow   : 0 0 2px #000;
+    position     : relative;
+}
+
+.order {
+    position        : absolute;
+    bottom          : 5%;
+    left            : 50%;
+    transform       : translateX(-50%);
+    width           : 100px;
+    height          : 30px;
+    border-radius   : 12px;
+    border          : none;
+    background-color: #eb2d2d;
+    box-shadow      : 1px 2px 2px #c1c5c5;
+    font-weight     : 700;
+}
+
+.order a {
+    color          : #fff;
+    text-decoration: none;
+}
+.order a:visited {
+    color          : #fff;
+    text-decoration: none;
+}
+
+.order:hover {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.589);
+    cursor: pointer;
+}
+
+.one-content:nth-child(1) {
+    background-image   : url(img/prescription\ 2.jpg);
+    background-position: center;
+    background-size    : cover;
+}
+
+.one-content:nth-child(2) {
+    background-image   : url(img/doctor.jpg);
+    background-position: center;
+    background-size    : cover;
+}
+
+.one-content:nth-child(3) {
+    background-image   : url(img/support.jpg);
+    background-position: center;
+    background-size    : cover;
+}
+
+.one-content h3 {
+    color      : #E30707;
+    font-size  : 22px;
+    font-weight: 700;
+}
+
+.box__two {
+    width     : 100%;
+    height    : auto;
+    padding   : 20px;
+    text-align: center;
+}
+
+.box__two--title {
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align     : left;
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+}
+
+.content-img {
+    width : 220px;
+    height: 150px;
+
+}
+
+.content {
+    padding         : 10px;
+    margin          : 7px;
+    width           : 250px;
+    overflow        : hidden;
+    border-radius   : 10px;
+    border          : 1px solid #c1c5c5;
+    background-color: #fff;
+}
+
+.content__title {
+    padding    : 12px;
+    line-height: 1.5;
+}
+
+.content__title span {
+    display: block;
+}
+
+.content__title--type {
+    color      : #777;
+    font-weight: 400;
+    font-size  : 15px;
+}
+
+.content__title--price {
+    color    : #eb2d2d;
+    font-size: 15px;
+}
+
+.box-btn {
+    margin          : 10px;
+    padding         : 10px;
+    width           : 100px;
+    font-size       : 15px;
+    border          : none;
+    border-radius   : 20px;
+    background-color: #4d84a7;
+}
+
+.box-btn a {
+    text-decoration: none;
+    color          : #fff;
+}
+
+.box-btn:hover {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.589);
+    transform : scale(1.1);
+    cursor: pointer;
+}

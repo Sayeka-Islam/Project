@@ -1,0 +1,130 @@
+* {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-image: linear-gradient(to bottom, #4d84a7, #ecf2f8);
+    height          : 5em;
+    width           : auto;
+    text-align      : right;
+    padding-top     : 28px;
+    font-size       : 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color          : #000;
+    padding        : 7px;
+    margin         : 10px;
+    font-weight    : bold;
+    font-size      : 18px;
+}
+
+.nav a:hover {
+    border: 2px solid #000;
+}
+
+#logo {
+    float      : left;
+    padding    : 2px;
+    margin-left: 10px;
+    text-shadow: 2px 3px 5px #fff;
+    font-size  : 25px;
+    font-family: cursive;
+    font-weight: bold;
+    color      : #000;
+}
+
+#logo::after {
+    content: "";
+    display: table;
+    clear  : both;
+}
+
+.dropdown-container {
+    text-align: center;
+    width     : 7em;
+    position  : relative;
+    display   : inline-block;
+}
+
+.dropdown-contant {
+    text-align      : center;
+    width           : 10em;
+    position        : absolute;
+    background-color: #4d84a7;
+    left            : 0;
+    top             : 30px;
+    display         : none;
+}
+
+.dropdown-container:hover .dropdown-contant {
+    display: block;
+}
+
+.dropdown-contant a {
+    padding: 7px;
+    display: block;
+}
+
+footer {
+    background-color: #4d84a7;
+    font-weight     : bold;
+    height          : 7em;
+    width           : auto;
+    color           : #fff;
+    display         : flex;
+    text-align      : left;
+    justify-content : space-around;
+    align-items     : center;
+}
+
+form {
+    display: inline;
+}
+
+input[type=text] {
+    border : none;
+    height : 27px;
+    width  : 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+form button {
+    padding         : 6px;
+    border          : none;
+    cursor          : pointer;
+    background-image: linear-gradient(to bottom, #7EA6C0, #B0C8D9);
+    font-size       : 16px;
+}
+
+.contact {
+    background-color: #F3F7FB;
+    padding         : 30px;
+    display         : flex;
+    justify-content : space-between;
+}
+
+.contact-text {
+    width           : 50%;
+    height          : auto;
+    margin          : 20px;
+    padding         : 12px;
+    text-align      : center;
+    line-height     : 2;
+}
+
+.contact-btn {
+    margin          : 10px;
+    padding         : 10px;
+    width           : 150px;
+    font-size       : 18px;
+    border          : none;
+    border-radius   : 20px;
+    background-color: #7EA6C0;
+    color          : #000;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.589);
+}
