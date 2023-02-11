@@ -1,0 +1,192 @@
+* {
+    margin    : 0px;
+    box-sizing: border-box;
+}
+
+.title {
+    background-color: #42725A;
+    text-align      : center;
+    position        : relative;
+    height          : 120px;
+    color           : #fff;
+}
+
+.title img {
+    position: absolute;
+    height  : 100px;
+    width   : 100px;
+    bottom  : 0px;
+    left    : 5px;
+}
+
+.title h1 {
+    position: absolute;
+    top     : 40%;
+    left    : 40%;
+}
+
+.navbar {
+    background-color: #4CB050;
+    padding         : 12px;
+    width           : 100%;
+    text-align      : center;
+    height          : 7vh;
+}
+
+.navbar a {
+    padding        : 12px;
+    color          : #fff;
+    text-decoration: none;
+    font-weight    : bold;
+    font-size      : 12px;
+    border         : 1px solid #fff;
+    border-radius  : 5%;
+    width          : 10%;
+}
+
+a:hover {
+    background-color: #1f8122;
+}
+
+.dropdown-container {
+    text-align: center;
+    min-width : 90px;
+    position  : relative;
+    display   : inline-block;
+}
+
+.dropdown-contant {
+    text-align      : center;
+    min-width       : 90px;
+    position        : absolute;
+    background-color: #0118FC;
+    color           : white;
+    right           : 0;
+    top             : 25px;
+    display         : none;
+}
+
+.dropdown-container:hover .dropdown-contant {
+    display: block;
+    width  : auto;
+    z-index: 1;
+}
+
+.dropdown-contant a {
+    padding      : 7px;
+    display      : block;
+    border-radius: 7%;
+    width        : auto;
+}
+
+.dp-container {
+    text-align: center;
+    min-width : 90px;
+    position  : relative;
+    display   : inline-block;
+}
+
+.dp-contant {
+    text-align      : center;
+    min-width       : 90px;
+    position        : absolute;
+    background-color: #FF1E00;
+    color           : white;
+    left            : 100%;
+    top             : 3%;
+    display         : none;
+}
+
+.dp-container:hover .dp-contant {
+    display: block;
+    width  : auto;
+    z-index: 1;
+}
+
+.dp-contant a {
+    padding      : 7px;
+    display      : block;
+    border-radius: 7%;
+    width        : auto;
+    z-index      : 1;
+}
+
+footer {
+    background-color: #4CB050;
+    text-align      : center;
+    position        : relative;
+    height          : 150px;
+    color           : #fff;
+}
+
+main {
+    background-color: black;
+    height          : 200vh;
+    position: relative;
+}
+
+.left {
+    margin  : 0px;
+    color   : black;
+    width   : 200px;
+    position: absolute;
+    left    : 0px;
+}
+
+.left li {
+    margin          : 0px;
+    padding         : 7px;
+    background-color: #CCCCCC;
+    list-style-type : none;
+    border          : 1px solid red;
+}
+
+.left li:hover {
+    background-color: #3C3C3A;
+    cursor          : pointer;
+}
+
+.first {
+    background-color: white;
+    padding         : 20px;
+    width           : 40%;
+    height          : 300px;
+    position        : absolute;
+    left            : 30%;
+    top             : 7%;
+    border-radius   : 5%;
+}
+
+.second {
+    background-color: white;
+    padding         : 12px;
+    width           : 40%;
+    height          : 600px;
+    position        : absolute;
+    left            : 30%;
+    top             : 40%;
+    border-radius   : 5%;
+}
+
+.right-top {
+    position: absolute;
+    right   : 2%;
+    top     : 2%;
+}
+
+.right-top img {
+    width: 300px;
+}
+
+.right-bottom {
+    position: absolute;
+    right   : 2%;
+    top     : 40%;
+}
+
+footer h3 {
+    position  : absolute;
+    top       : 40%;
+    left      : 40%;
+    font-style: italic;
+}
