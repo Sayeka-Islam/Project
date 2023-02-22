@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            text-align: center;
+            background-color: #f5e9f6;
+        }
+
+        .container {
+            margin: 10rem auto;
+            padding: 2rem;
+            font-size: 1.6rem;
+            width: 50%;
+            height: 50vh;
+            background-image: linear-gradient(to right top,
+                    rgba(245, 45, 45, .6) 10%,
+                    rgba(179, 69, 179, .5) 100%);
+            border: 3px solid rgb(142, 69, 215, 59%);
+            box-shadow: 2px 5px 7px #cbb5b5;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 1rem;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .content__title {
+            text-align: center;
+            font-size: 4.5rem;
+            color: #fff;
+            text-shadow: 3px 5px 2px rgb(225, 83, 130);
+        }
+
+        .content__clock {
+            border: 3px dashed rgba(240, 94, 94, 0.6);
+            width: 50%;
+            padding: 2rem;
+            text-align: center;
+            font-size: 3rem;
+            background-color: rgba(240, 94, 133, 0.6);
+        }
+
+        .content__btn {
+            font-size: 2rem;
+            margin-bottom: 1.3rem;
+            padding: 2rem;
+            padding-bottom: 1rem;
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 1rem;
+            overflow: hidden;
+        }
+
+        .btn {
+            font-size: inherit;
+            font-style: inherit;
+            border: none;
+            padding: max(1.5rem);
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 3px 5px 5px #e97ca0;
+            background-color: rgba(245, 45, 45, .7);
+            color: #fff;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            box-shadow: 3px 5px 5px rgb(225, 83, 130);
+            transform: scale(1.05);
+        }
+
+        .initial {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: darkolivegreen;
+            text-align: right;
+            margin-right: 20rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="content__title">Vanilla javascript stopwatch</h1>
+
+        <div class="content__clock">00:00:00.00</div>
+
+        <div class="content__btn">
+            <button type="submit" class="btn content__btn-start">Start</button>
+            <button type="submit" class="btn content__btn-stop">Stop</button>
+            <button type="reset" class="btn content__btn-reset">Reset</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="initial">
+            Thank you for visiting,
+            from Safa 😄
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
