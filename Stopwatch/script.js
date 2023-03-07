@@ -18,25 +18,24 @@ const startTimer = function () {
 
     let c = 0;
     const tick = () => {
-        if (sec === 59) {
-            sec = -1;
+        if (sec === 60) {
             min++;
+            sec = 0;
         }
-        if (min === 59) {
-            min = 0;
+        if (min === 60) {
             hour++;
+            sec = 0;
+            min = 0;
         }
         if (c === 100) {
-            sec++;
             c = 0;
+            sec++;
         }
-
-        console.log(c);
 
         c++;
 
         //display
-        if (c < 100) {
+        if (c !== 100) {
             clockTimer.textContent = `${String(hour).padStart(2, 0)
                 }:${String(min).padStart(2, 0)
                 }:${String(sec).padStart(2, 0)
